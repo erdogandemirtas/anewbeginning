@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Finish : MonoBehaviour
+public class Finish : MonoBehaviour, IPointerClickHandler
 {
     public ParticleSystem finishEffect; // Týklama sonrasý efekt için ParticleSystem
     public Animator animator; // Animator bileþeni
 
-    void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         if (finishEffect != null)
         {

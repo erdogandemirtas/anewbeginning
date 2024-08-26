@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Stone : MonoBehaviour
+public class Stone : MonoBehaviour, IPointerClickHandler
 {
     public int sceneToLoad = 7; // Yüklemek istediðiniz sahne numarasýný buraya girin
 
-    void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         // Sahneyi yükler
         LoadScene();

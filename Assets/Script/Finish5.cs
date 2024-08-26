@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Finish5 : MonoBehaviour
+public class Finish5 : MonoBehaviour, IPointerClickHandler
 {
     public ParticleSystem finishEffect; // Efekt için ParticleSystem
     public Animator animator; // Animator bileþeni
 
-    void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         int sceneIndex = 6;
 

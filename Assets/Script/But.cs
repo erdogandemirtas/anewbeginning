@@ -17,30 +17,20 @@ public class But : MonoBehaviour
         LoadScene(MENU_SCENE_INDEX);
     }
 
-    public void FOREVER()
-    {
-        LoadScene(PLAY_SCENE_INDEX);
-    }
-
     public void LEVELS()
     {
         LoadScene(LEVELS_SCENE_INDEX);
     }
 
-    public void QUIT()
-    {
-        Application.Quit(); // Uygulamayý kapatýr
-    }
-
     private void LoadScene(int sceneIndex)
     {
-        if (sceneIndex >= 0 && sceneIndex < SceneManager.sceneCountInBuildSettings)
+        if (SceneManager.sceneCountInBuildSettings > sceneIndex)
         {
             SceneManager.LoadScene(sceneIndex);
         }
         else
         {
-            Debug.LogError("Geçersiz sahne numarasý: " + sceneIndex);
+            Debug.LogError("Geçiþ yapmak istediðiniz sahne Build Settings'ta bulunmuyor!");
         }
     }
 }

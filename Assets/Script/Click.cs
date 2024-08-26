@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Click : MonoBehaviour
+public class Click : MonoBehaviour, IPointerClickHandler
 {
     public ParticleSystem clickEffect; // Týklama etkisi için bir ParticleSystem
 
-    void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         if (clickEffect != null)
         {

@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Finish3 : MonoBehaviour
+public class Finish3 : MonoBehaviour, IPointerClickHandler
 {
     public ParticleSystem finishEffect; // Efekt için ParticleSystem
     public Animator animator; // Animator bileþeni
 
-    void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
         // Sahne geçiþi için basit bir kontrol
         if (SceneManager.sceneCountInBuildSettings > 4)

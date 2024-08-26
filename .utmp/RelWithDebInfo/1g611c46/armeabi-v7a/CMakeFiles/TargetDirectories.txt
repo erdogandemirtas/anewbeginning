@@ -1,5 +1,0 @@
-C:/Users/erdog/Documents/anewbeginning/.utmp/RelWithDebInfo/1g611c46/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/erdog/Documents/anewbeginning/.utmp/RelWithDebInfo/1g611c46/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-C:/Users/erdog/Documents/anewbeginning/.utmp/RelWithDebInfo/1g611c46/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
-C:/Users/erdog/Documents/anewbeginning/.utmp/RelWithDebInfo/1g611c46/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
-C:/Users/erdog/Documents/anewbeginning/.utmp/RelWithDebInfo/1g611c46/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

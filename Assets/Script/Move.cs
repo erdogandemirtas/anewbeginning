@@ -7,11 +7,6 @@ public class Move : MonoBehaviour
     public float speed = 5f; // Baþlangýç hýzý
     public float acceleration = 0.002f; // Hýz artýþ miktarý
 
-    void Start()
-    {
-        // Baþlangýçta yapýlacak iþler varsa buraya ekleyebilirsiniz
-    }
-
     void Update()
     {
         // Hýzý zamanla artýrýr
